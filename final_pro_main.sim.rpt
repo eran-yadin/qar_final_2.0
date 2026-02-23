@@ -1,0 +1,293 @@
+Simulator report for final_pro_main
+Mon Feb 23 18:21:03 2026
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 3.0 us       ;
+; Simulation Netlist Size     ; 84 nodes     ;
+; Simulation Coverage         ;      58.59 % ;
+; Total Number of Transitions ; 1844         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C16F484C6 ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                              ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+; Option                                                                                     ; Setting            ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+; Simulation mode                                                                            ; Timing             ; Timing        ;
+; Start time                                                                                 ; 0 ns               ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF               ;               ;
+; Vector input source                                                                        ; test_inc_dec_1.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                 ; On            ;
+; Check outputs                                                                              ; Off                ; Off           ;
+; Report simulation coverage                                                                 ; On                 ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                 ; On            ;
+; Display missing 1-value coverage report                                                    ; On                 ; On            ;
+; Display missing 0-value coverage report                                                    ; On                 ; On            ;
+; Detect setup and hold time violations                                                      ; Off                ; Off           ;
+; Detect glitches                                                                            ; Off                ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                ; Off           ;
+; Generate Signal Activity File                                                              ; Off                ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                 ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE         ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                 ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto               ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport          ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport          ; Transport     ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      58.59 % ;
+; Total nodes checked                                 ; 84           ;
+; Total output ports checked                          ; 99           ;
+; Total output ports with complete 1/0-value coverage ; 58           ;
+; Total output ports with no 1/0-value coverage       ; 27           ;
+; Total output ports with no 1-value coverage         ; 27           ;
+; Total output ports with no 0-value coverage         ; 41           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                            ;
++------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                        ; Output Port Name                                                                                                 ; Output Port Type ;
++------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[4]        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[4]        ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[3]        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[3]        ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[2]        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[2]        ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[1]        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[1]        ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[0]        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[0]        ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita0        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita0        ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita0        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita0~COUT   ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita1        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita1        ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita1        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita1~COUT   ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita2        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita2        ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita2        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita2~COUT   ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita3        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita3        ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita3        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita3~COUT   ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita4        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita4        ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita4        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita4~COUT   ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita5        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita5        ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita5        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita5~COUT   ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita6        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita6        ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita6        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita6~COUT   ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita7        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita7        ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita7        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita7~COUT   ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita8        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita8        ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita8        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita8~COUT   ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita9        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita9        ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita9        ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita9~COUT   ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita10       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita10       ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita10       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita10~COUT  ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita11       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita11       ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita11       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita11~COUT  ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita12       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita12       ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita12       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita12~COUT  ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita13       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita13       ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita13       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita13~COUT  ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita14       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita14       ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita14       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita14~COUT  ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita15       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita15       ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita15       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita15~COUT  ; cout             ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita15~0     ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_comb_bita15~0     ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|cout_actual~3             ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|cout_actual~3             ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[15]~0     ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[15]~0     ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[13]~1     ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[13]~1     ; combout          ;
+; |increment|inst3                                                                                                 ; |increment|inst3                                                                                                 ; combout          ;
+; |increment|Out[4]~output                                                                                         ; |increment|Out[4]~output                                                                                         ; o                ;
+; |increment|Out[4]                                                                                                ; |increment|Out[4]                                                                                                ; padout           ;
+; |increment|Out[3]~output                                                                                         ; |increment|Out[3]~output                                                                                         ; o                ;
+; |increment|Out[3]                                                                                                ; |increment|Out[3]                                                                                                ; padout           ;
+; |increment|Out[2]~output                                                                                         ; |increment|Out[2]~output                                                                                         ; o                ;
+; |increment|Out[2]                                                                                                ; |increment|Out[2]                                                                                                ; padout           ;
+; |increment|Out[1]~output                                                                                         ; |increment|Out[1]~output                                                                                         ; o                ;
+; |increment|Out[1]                                                                                                ; |increment|Out[1]                                                                                                ; padout           ;
+; |increment|Out[0]~output                                                                                         ; |increment|Out[0]~output                                                                                         ; o                ;
+; |increment|Out[0]                                                                                                ; |increment|Out[0]                                                                                                ; padout           ;
+; |increment|dec~input                                                                                             ; |increment|dec~input                                                                                             ; o                ;
+; |increment|dec                                                                                                   ; |increment|dec                                                                                                   ; padout           ;
+; |increment|inc~input                                                                                             ; |increment|inc~input                                                                                             ; o                ;
+; |increment|inc                                                                                                   ; |increment|inc                                                                                                   ; padout           ;
+; |increment|inst3~clkctrl                                                                                         ; |increment|inst3~clkctrl                                                                                         ; outclk           ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[0]~feeder ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[0]~feeder ; combout          ;
++------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                   ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                  ; Output Port Name                                                                                           ; Output Port Type ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[15] ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[15] ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[14] ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[14] ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[12] ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[12] ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[11] ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[11] ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[7]  ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[7]  ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[6]  ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[6]  ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[5]  ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[5]  ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|cout_actual~0       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|cout_actual~0       ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|cout_actual~4       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|cout_actual~4       ; combout          ;
+; |increment|~GND                                                                                            ; |increment|~GND                                                                                            ; combout          ;
+; |increment|Out[15]~output                                                                                  ; |increment|Out[15]~output                                                                                  ; o                ;
+; |increment|Out[15]                                                                                         ; |increment|Out[15]                                                                                         ; padout           ;
+; |increment|Out[14]~output                                                                                  ; |increment|Out[14]~output                                                                                  ; o                ;
+; |increment|Out[14]                                                                                         ; |increment|Out[14]                                                                                         ; padout           ;
+; |increment|Out[12]~output                                                                                  ; |increment|Out[12]~output                                                                                  ; o                ;
+; |increment|Out[12]                                                                                         ; |increment|Out[12]                                                                                         ; padout           ;
+; |increment|Out[11]~output                                                                                  ; |increment|Out[11]~output                                                                                  ; o                ;
+; |increment|Out[11]                                                                                         ; |increment|Out[11]                                                                                         ; padout           ;
+; |increment|Out[7]~output                                                                                   ; |increment|Out[7]~output                                                                                   ; o                ;
+; |increment|Out[7]                                                                                          ; |increment|Out[7]                                                                                          ; padout           ;
+; |increment|Out[6]~output                                                                                   ; |increment|Out[6]~output                                                                                   ; o                ;
+; |increment|Out[6]                                                                                          ; |increment|Out[6]                                                                                          ; padout           ;
+; |increment|Out[5]~output                                                                                   ; |increment|Out[5]~output                                                                                   ; o                ;
+; |increment|Out[5]                                                                                          ; |increment|Out[5]                                                                                          ; padout           ;
+; |increment|CLK                                                                                             ; |increment|CLK                                                                                             ; padout           ;
+; |increment|Sclr~input                                                                                      ; |increment|Sclr~input                                                                                      ; o                ;
+; |increment|Sclr                                                                                            ; |increment|Sclr                                                                                            ; padout           ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                   ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                  ; Output Port Name                                                                                           ; Output Port Type ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[15] ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[15] ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[14] ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[14] ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[13] ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[13] ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[12] ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[12] ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[11] ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[11] ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[10] ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[10] ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[9]  ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[9]  ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[8]  ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[8]  ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[7]  ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[7]  ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[6]  ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[6]  ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[5]  ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|counter_reg_bit[5]  ; q                ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|cout_actual~0       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|cout_actual~0       ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|cout_actual~1       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|cout_actual~1       ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|cout_actual~2       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|cout_actual~2       ; combout          ;
+; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|cout_actual~4       ; |increment|lpm_counter0:inst|lpm_counter:lpm_counter_component|cntr_ifi:auto_generated|cout_actual~4       ; combout          ;
+; |increment|~GND                                                                                            ; |increment|~GND                                                                                            ; combout          ;
+; |increment|Out[15]~output                                                                                  ; |increment|Out[15]~output                                                                                  ; o                ;
+; |increment|Out[15]                                                                                         ; |increment|Out[15]                                                                                         ; padout           ;
+; |increment|Out[14]~output                                                                                  ; |increment|Out[14]~output                                                                                  ; o                ;
+; |increment|Out[14]                                                                                         ; |increment|Out[14]                                                                                         ; padout           ;
+; |increment|Out[13]~output                                                                                  ; |increment|Out[13]~output                                                                                  ; o                ;
+; |increment|Out[13]                                                                                         ; |increment|Out[13]                                                                                         ; padout           ;
+; |increment|Out[12]~output                                                                                  ; |increment|Out[12]~output                                                                                  ; o                ;
+; |increment|Out[12]                                                                                         ; |increment|Out[12]                                                                                         ; padout           ;
+; |increment|Out[11]~output                                                                                  ; |increment|Out[11]~output                                                                                  ; o                ;
+; |increment|Out[11]                                                                                         ; |increment|Out[11]                                                                                         ; padout           ;
+; |increment|Out[10]~output                                                                                  ; |increment|Out[10]~output                                                                                  ; o                ;
+; |increment|Out[10]                                                                                         ; |increment|Out[10]                                                                                         ; padout           ;
+; |increment|Out[9]~output                                                                                   ; |increment|Out[9]~output                                                                                   ; o                ;
+; |increment|Out[9]                                                                                          ; |increment|Out[9]                                                                                          ; padout           ;
+; |increment|Out[8]~output                                                                                   ; |increment|Out[8]~output                                                                                   ; o                ;
+; |increment|Out[8]                                                                                          ; |increment|Out[8]                                                                                          ; padout           ;
+; |increment|Out[7]~output                                                                                   ; |increment|Out[7]~output                                                                                   ; o                ;
+; |increment|Out[7]                                                                                          ; |increment|Out[7]                                                                                          ; padout           ;
+; |increment|Out[6]~output                                                                                   ; |increment|Out[6]~output                                                                                   ; o                ;
+; |increment|Out[6]                                                                                          ; |increment|Out[6]                                                                                          ; padout           ;
+; |increment|Out[5]~output                                                                                   ; |increment|Out[5]~output                                                                                   ; o                ;
+; |increment|Out[5]                                                                                          ; |increment|Out[5]                                                                                          ; padout           ;
+; |increment|CLK                                                                                             ; |increment|CLK                                                                                             ; padout           ;
+; |increment|Sclr~input                                                                                      ; |increment|Sclr~input                                                                                      ; o                ;
+; |increment|Sclr                                                                                            ; |increment|Sclr                                                                                            ; padout           ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Feb 23 18:21:02 2026
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off final_pro_E_D -c final_pro_main
+Info: Using vector source file "C:/apps/quartus_pro/final_pro_2.0/test_inc_dec_1.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of test_inc_dec_1.vwf called final_pro_main.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      58.59 %
+Info: Number of transitions in simulation is 1844
+Info: Vector file test_inc_dec_1.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 174 megabytes
+    Info: Processing ended: Mon Feb 23 18:21:03 2026
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
