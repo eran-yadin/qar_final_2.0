@@ -40,7 +40,9 @@ SUBDESIGN lpm_counter0
 (
 	clock	 : INPUT;
 	cnt_en	 : INPUT;
+	data[15..0]	 : INPUT;
 	sclr	 : INPUT;
+	sload	 : INPUT;
 	updown	 : INPUT;
 	q[15..0]	 : OUTPUT;
 )
@@ -58,8 +60,10 @@ VARIABLE
 BEGIN
 
 	q[15..0] = lpm_counter_component.q[15..0];
+	lpm_counter_component.sload = sload;
 	lpm_counter_component.sclr = sclr;
 	lpm_counter_component.clock = clock;
+	lpm_counter_component.data[15..0] = data[15..0];
 	lpm_counter_component.updown = updown;
 	lpm_counter_component.cnt_en = cnt_en;
 END;
@@ -82,7 +86,7 @@ END;
 -- Retrieval info: PRIVATE: ModulusCounter NUMERIC "1"
 -- Retrieval info: PRIVATE: ModulusValue NUMERIC "10000"
 -- Retrieval info: PRIVATE: SCLR NUMERIC "1"
--- Retrieval info: PRIVATE: SLOAD NUMERIC "0"
+-- Retrieval info: PRIVATE: SLOAD NUMERIC "1"
 -- Retrieval info: PRIVATE: SSET NUMERIC "0"
 -- Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
@@ -94,14 +98,18 @@ END;
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "16"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
 -- Retrieval info: USED_PORT: cnt_en 0 0 0 0 INPUT NODEFVAL cnt_en
+-- Retrieval info: USED_PORT: data 0 0 16 0 INPUT NODEFVAL data[15..0]
 -- Retrieval info: USED_PORT: q 0 0 16 0 OUTPUT NODEFVAL q[15..0]
 -- Retrieval info: USED_PORT: sclr 0 0 0 0 INPUT NODEFVAL sclr
+-- Retrieval info: USED_PORT: sload 0 0 0 0 INPUT NODEFVAL sload
 -- Retrieval info: USED_PORT: updown 0 0 0 0 INPUT NODEFVAL updown
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
 -- Retrieval info: CONNECT: q 0 0 16 0 @q 0 0 16 0
 -- Retrieval info: CONNECT: @updown 0 0 0 0 updown 0 0 0 0
 -- Retrieval info: CONNECT: @cnt_en 0 0 0 0 cnt_en 0 0 0 0
 -- Retrieval info: CONNECT: @sclr 0 0 0 0 sclr 0 0 0 0
+-- Retrieval info: CONNECT: @sload 0 0 0 0 sload 0 0 0 0
+-- Retrieval info: CONNECT: @data 0 0 16 0 data 0 0 16 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counter0.tdf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_counter0.inc FALSE

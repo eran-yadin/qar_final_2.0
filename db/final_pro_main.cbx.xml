@@ -2,10 +2,12 @@
 <LOG_ROOT>
 	<PROJECT NAME="final_pro_main">
 		<CBX_INST_ENTRY INSTANCE_NAME="|final_main|BUSMUX:inst15|lpm_mux:$00000" CBX_FILE_NAME="mux_krc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|final_main|increment:inst1|lpm_counter0:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_94j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|final_main|alu_32bit_2:inst|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_cjm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|final_main|alu_32bit_2:inst|lpm_mult:Mult0" CBX_FILE_NAME="mult_ubt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|final_main|increment:inst2|lpm_add_sub1:inst2|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_nqg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|final_main|increment:inst3|lpm_counter0:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_m3k.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|final_main|BUSMUX:inst21|lpm_mux:$00000" CBX_FILE_NAME="mux_irc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|final_main|alu_32bit:inst|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_cjm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|final_main|alu_32bit:inst|lpm_mult:Mult0" CBX_FILE_NAME="mult_ubt.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|final_main|increment:inst2|lpm_counter0:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_94j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|final_main|increment:inst2|lpm_counter0:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_m3k.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|final_main|increment:inst3|lpm_add_sub1:inst2|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_nqg.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

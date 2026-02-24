@@ -1,5 +1,5 @@
 Flow report for final_pro_main
-Mon Feb 23 22:13:59 2026
+Tue Feb 24 12:50:31 2026
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Mon Feb 23 22:13:59 2026        ;
+; Flow Status                        ; Successful - Tue Feb 24 12:50:31 2026        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; final_pro_main                               ;
 ; Top-level Entity Name              ; final_main                                   ;
@@ -46,10 +46,10 @@ applicable agreement for further details.
 ; Device                             ; EP3C16F484C6                                 ;
 ; Timing Models                      ; Final                                        ;
 ; Met timing requirements            ; N/A                                          ;
-; Total logic elements               ; 1,477 / 15,408 ( 10 % )                      ;
-;     Total combinational functions  ; 1,477 / 15,408 ( 10 % )                      ;
-;     Dedicated logic registers      ; 180 / 15,408 ( 1 % )                         ;
-; Total registers                    ; 180                                          ;
+; Total logic elements               ; 1,761 / 15,408 ( 11 % )                      ;
+;     Total combinational functions  ; 1,761 / 15,408 ( 11 % )                      ;
+;     Dedicated logic registers      ; 316 / 15,408 ( 2 % )                         ;
+; Total registers                    ; 316                                          ;
 ; Total pins                         ; 37 / 347 ( 11 % )                            ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0 / 516,096 ( 0 % )                          ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/23/2026 22:12:51 ;
+; Start date & time ; 02/24/2026 12:50:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; final_pro_main      ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ applicable agreement for further details.
 +------------------------------------+---------------------------------+----------------+-------------+----------------+
 ; Assignment Name                    ; Value                           ; Default Value  ; Entity Name ; Section Id     ;
 +------------------------------------+---------------------------------+----------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 242544225679991.177187757117176 ; --             ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 242544225679991.177193020307584 ; --             ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT             ; Vhdl                            ; --             ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                ; ModelSim-Altera (VHDL)          ; <None>         ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_COUNTER                     ; --             ; --          ; --             ;
@@ -84,6 +84,8 @@ applicable agreement for further details.
 ; IP_TOOL_NAME                       ; LPM_DIVIDE                      ; --             ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_MUX                         ; --             ; --          ; --             ;
 ; IP_TOOL_NAME                       ; LPM_DECODE                      ; --             ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_ADD_SUB                     ; --             ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --          ; --             ;
 ; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --          ; --             ;
@@ -107,6 +109,8 @@ applicable agreement for further details.
 ; MISC_FILE                          ; lpm_mux1.bsf                    ; --             ; --          ; --             ;
 ; MISC_FILE                          ; lpm_decode0.tdf                 ; --             ; --          ; --             ;
 ; MISC_FILE                          ; lpm_decode0.bsf                 ; --             ; --          ; --             ;
+; MISC_FILE                          ; lpm_add_sub1.tdf                ; --             ; --          ; --             ;
+; MISC_FILE                          ; lpm_add_sub1.bsf                ; --             ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE        ; 1.2V                            ; --             ; --          ; --             ;
 ; PARTITION_COLOR                    ; 16764057                        ; --             ; final_main  ; Top            ;
 ; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --             ; final_main  ; Top            ;
@@ -122,12 +126,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:22     ; 1.0                     ; 275 MB              ; 00:00:27                           ;
-; Fitter                    ; 00:00:37     ; 1.0                     ; 315 MB              ; 00:00:44                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 281 MB              ; 00:00:03                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 251 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 217 MB              ; 00:00:04                           ;
-; Total                     ; 00:01:05     ; --                      ; --                  ; 00:01:18                           ;
+; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 276 MB              ; 00:00:11                           ;
+; Fitter                    ; 00:00:07     ; 1.0                     ; 317 MB              ; 00:00:08                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 283 MB              ; 00:00:03                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 252 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 219 MB              ; 00:00:04                           ;
+; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:26                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

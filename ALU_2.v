@@ -1,0 +1,40 @@
+module alu_32bit_2 (
+    input [15:0] A,          // מספר ראשון ממונה 1
+    input [15:0] B,          // מספר שני ממונה 2
+    input [1:0]  op_select,  // בחירת פעולה (SW[9:8])
+    output reg [31:0] result // תוצאה ל-BCD
+);
+
+    // משתני עזר פנימיים לאחסון הגדול והקטן
+    reg [15:0] max_val;
+    reg [15:0] min_val;
+
+    always @(*) begin
+        // שלב ההשוואה: קביעה מי הגדול ומי הקטן
+        if (A >= B) begin
+            max_val = A;
+            min_val = B;
+        end else begin
+            max_val = B;
+            min_val = A;
+        end
+
+        // ביצוע הפעולות לפי הערכים הממוינים
+        case (op_select)
+            2'b00: result = {16'd0, (A + B)};          // חיבור (נשאר זהה)
+
+            2'b01: result = {16'd0, (max_val - min_val)}; // חיסור: תמיד גדול פחות קטן
+
+            2'b10: result = A*B;                     // כפל (נשאר זהה)
+
+            2'b11: begin                               // חילוק: תמיד גדול חלקי קטן
+                if (min_val != 0)
+                    result = {16'd0, (max_val / min_val)};
+                else
+                    result = 32'hFFFFFFFF;            // חיווי שגיאה בחלוקה ב-0
+            end
+
+            default: result = 32'd0;
+        endcase
+    end
+endmodule
