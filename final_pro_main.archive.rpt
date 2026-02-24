@@ -1,0 +1,123 @@
+Archive Project report for final_pro_main
+Tue Feb 24 15:08:10 2026
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Tue Feb 24 15:08:10 2026 ;
+; Revision Name          ; final_pro_main                        ;
+; Top-level Entity Name  ; final_final_pro_main                  ;
+; Family                 ; Cyclone III                           ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/apps/quartus_pro/final_pro_2.0/final_pro_eran_daniel.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'final_pro_main.archive.rpt'
+Info: Evaluation of Tcl script c:/altera/91sp2/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 171 megabytes
+    Info: Processing ended: Tue Feb 24 15:08:10 2026
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-----------------------------------------------------+
+; Files Archived                                      ;
++-----------------------------------------------------+
+; File Name                                           ;
++-----------------------------------------------------+
+; 16-7seg.vhd                                         ;
+; 16-32.vhd                                           ;
+; 16to32.v                                            ;
+; 32bit_7seg.vhd                                      ;
+; ALU.v                                               ;
+; ALU_2.v                                             ;
+; but_con.v                                           ;
+; c:/altera/91sp2/quartus/bin/assignment_defaults.qdf ;
+; de0_pins.tcl                                        ;
+; demux 1-2.v                                         ;
+; demux.v                                             ;
+; demux_modular.v                                     ;
+; edge_detector.v                                     ;
+; final_final_pro_main.bdf                            ;
+; final_IO.tcl                                        ;
+; final_main.bdf                                      ;
+; final_pro_E_D.qpf                                   ;
+; final_pro_main.qsf                                  ;
+; increment.bdf                                       ;
+; label_player.v                                      ;
+; Led_fun_time.v                                      ;
+; lpm_add_sub0.bsf                                    ;
+; lpm_add_sub0.qip                                    ;
+; lpm_add_sub0.tdf                                    ;
+; lpm_add_sub1.bsf                                    ;
+; lpm_add_sub1.qip                                    ;
+; lpm_add_sub1.tdf                                    ;
+; lpm_counter0.bsf                                    ;
+; lpm_counter0.qip                                    ;
+; lpm_counter0.tdf                                    ;
+; lpm_decode0.bsf                                     ;
+; lpm_decode0.qip                                     ;
+; lpm_decode0.tdf                                     ;
+; lpm_divide0.bsf                                     ;
+; lpm_divide0.qip                                     ;
+; lpm_divide0.tdf                                     ;
+; lpm_mult0.bsf                                       ;
+; lpm_mult0.qip                                       ;
+; lpm_mult0.tdf                                       ;
+; lpm_mux0.bsf                                        ;
+; lpm_mux0.qip                                        ;
+; lpm_mux0.tdf                                        ;
+; lpm_mux1.bsf                                        ;
+; lpm_mux1.qip                                        ;
+; lpm_mux1.tdf                                        ;
+; press_detector.v                                    ;
+; push_ball_test.bdf                                  ;
+; signalprobe_qsf.tcl                                 ;
+; tag_of_war.v                                        ;
+; tcl_push_ball_test.tcl                              ;
+; test_inc_dec_1.vwf                                  ;
++-----------------------------------------------------+
+
+

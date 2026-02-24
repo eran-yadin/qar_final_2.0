@@ -1,0 +1,62 @@
+Quartus II Archive log --	C:/apps/quartus_pro/final_pro_2.0/final_pro_eran_daniel.qarlog
+
+Archive:	C:/apps/quartus_pro/final_pro_2.0/final_pro_eran_daniel.qar
+Date:		Tue Feb 24 15:08:10 2026
+Quartus II		9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+
+	=========== Files Selected: ===========
+C:/apps/quartus_pro/final_pro_2.0/16-32.vhd
+C:/apps/quartus_pro/final_pro_2.0/16-7seg.vhd
+C:/apps/quartus_pro/final_pro_2.0/16to32.v
+C:/apps/quartus_pro/final_pro_2.0/32bit_7seg.vhd
+C:/apps/quartus_pro/final_pro_2.0/ALU.v
+C:/apps/quartus_pro/final_pro_2.0/ALU_2.v
+C:/apps/quartus_pro/final_pro_2.0/Led_fun_time.v
+C:/apps/quartus_pro/final_pro_2.0/but_con.v
+C:/apps/quartus_pro/final_pro_2.0/de0_pins.tcl
+C:/apps/quartus_pro/final_pro_2.0/demux 1-2.v
+C:/apps/quartus_pro/final_pro_2.0/demux.v
+C:/apps/quartus_pro/final_pro_2.0/demux_modular.v
+C:/apps/quartus_pro/final_pro_2.0/edge_detector.v
+C:/apps/quartus_pro/final_pro_2.0/final_IO.tcl
+C:/apps/quartus_pro/final_pro_2.0/final_final_pro_main.bdf
+C:/apps/quartus_pro/final_pro_2.0/final_main.bdf
+C:/apps/quartus_pro/final_pro_2.0/final_pro_E_D.qpf
+C:/apps/quartus_pro/final_pro_2.0/final_pro_main.qsf
+C:/apps/quartus_pro/final_pro_2.0/increment.bdf
+C:/apps/quartus_pro/final_pro_2.0/label_player.v
+C:/apps/quartus_pro/final_pro_2.0/lpm_add_sub0.bsf
+C:/apps/quartus_pro/final_pro_2.0/lpm_add_sub0.qip
+C:/apps/quartus_pro/final_pro_2.0/lpm_add_sub0.tdf
+C:/apps/quartus_pro/final_pro_2.0/lpm_add_sub1.bsf
+C:/apps/quartus_pro/final_pro_2.0/lpm_add_sub1.qip
+C:/apps/quartus_pro/final_pro_2.0/lpm_add_sub1.tdf
+C:/apps/quartus_pro/final_pro_2.0/lpm_counter0.bsf
+C:/apps/quartus_pro/final_pro_2.0/lpm_counter0.qip
+C:/apps/quartus_pro/final_pro_2.0/lpm_counter0.tdf
+C:/apps/quartus_pro/final_pro_2.0/lpm_decode0.bsf
+C:/apps/quartus_pro/final_pro_2.0/lpm_decode0.qip
+C:/apps/quartus_pro/final_pro_2.0/lpm_decode0.tdf
+C:/apps/quartus_pro/final_pro_2.0/lpm_divide0.bsf
+C:/apps/quartus_pro/final_pro_2.0/lpm_divide0.qip
+C:/apps/quartus_pro/final_pro_2.0/lpm_divide0.tdf
+C:/apps/quartus_pro/final_pro_2.0/lpm_mult0.bsf
+C:/apps/quartus_pro/final_pro_2.0/lpm_mult0.qip
+C:/apps/quartus_pro/final_pro_2.0/lpm_mult0.tdf
+C:/apps/quartus_pro/final_pro_2.0/lpm_mux0.bsf
+C:/apps/quartus_pro/final_pro_2.0/lpm_mux0.qip
+C:/apps/quartus_pro/final_pro_2.0/lpm_mux0.tdf
+C:/apps/quartus_pro/final_pro_2.0/lpm_mux1.bsf
+C:/apps/quartus_pro/final_pro_2.0/lpm_mux1.qip
+C:/apps/quartus_pro/final_pro_2.0/lpm_mux1.tdf
+C:/apps/quartus_pro/final_pro_2.0/press_detector.v
+C:/apps/quartus_pro/final_pro_2.0/push_ball_test.bdf
+C:/apps/quartus_pro/final_pro_2.0/signalprobe_qsf.tcl
+C:/apps/quartus_pro/final_pro_2.0/tag_of_war.v
+C:/apps/quartus_pro/final_pro_2.0/tcl_push_ball_test.tcl
+C:/apps/quartus_pro/final_pro_2.0/test_inc_dec_1.vwf
+c:/altera/91sp2/quartus/bin/assignment_defaults.qdf
+	======= Total: 51 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

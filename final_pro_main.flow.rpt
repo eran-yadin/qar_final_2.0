@@ -1,5 +1,5 @@
 Flow report for final_pro_main
-Tue Feb 24 12:50:31 2026
+Tue Feb 24 14:27:48 2026
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,19 +38,19 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +------------------------------------+----------------------------------------------+
-; Flow Status                        ; Successful - Tue Feb 24 12:50:31 2026        ;
+; Flow Status                        ; Successful - Tue Feb 24 14:27:48 2026        ;
 ; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                      ; final_pro_main                               ;
-; Top-level Entity Name              ; final_main                                   ;
+; Top-level Entity Name              ; final_final_pro_main                         ;
 ; Family                             ; Cyclone III                                  ;
 ; Device                             ; EP3C16F484C6                                 ;
 ; Timing Models                      ; Final                                        ;
 ; Met timing requirements            ; N/A                                          ;
-; Total logic elements               ; 1,761 / 15,408 ( 11 % )                      ;
-;     Total combinational functions  ; 1,761 / 15,408 ( 11 % )                      ;
-;     Dedicated logic registers      ; 316 / 15,408 ( 2 % )                         ;
-; Total registers                    ; 316                                          ;
-; Total pins                         ; 37 / 347 ( 11 % )                            ;
+; Total logic elements               ; 1,912 / 15,408 ( 12 % )                      ;
+;     Total combinational functions  ; 1,910 / 15,408 ( 12 % )                      ;
+;     Dedicated logic registers      ; 389 / 15,408 ( 3 % )                         ;
+; Total registers                    ; 389                                          ;
+; Total pins                         ; 52 / 347 ( 15 % )                            ;
 ; Total virtual pins                 ; 0                                            ;
 ; Total memory bits                  ; 0 / 516,096 ( 0 % )                          ;
 ; Embedded Multiplier 9-bit elements ; 2 / 112 ( 2 % )                              ;
@@ -63,62 +63,62 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/24/2026 12:50:03 ;
+; Start date & time ; 02/24/2026 14:27:28 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; final_pro_main      ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                     ;
-+------------------------------------+---------------------------------+----------------+-------------+----------------+
-; Assignment Name                    ; Value                           ; Default Value  ; Entity Name ; Section Id     ;
-+------------------------------------+---------------------------------+----------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 242544225679991.177193020307584 ; --             ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT             ; Vhdl                            ; --             ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                ; ModelSim-Altera (VHDL)          ; <None>         ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_COUNTER                     ; --             ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_MUX                         ; --             ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_ADD_SUB                     ; --             ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_MULT                        ; --             ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_DIVIDE                      ; --             ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_MUX                         ; --             ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_DECODE                      ; --             ; --          ; --             ;
-; IP_TOOL_NAME                       ; LPM_ADD_SUB                     ; --             ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --          ; --             ;
-; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP             ; 85                              ; --             ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP             ; 0                               ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_counter0.tdf                ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_counter0.bsf                ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux0.tdf                    ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux0.bsf                    ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_add_sub0.tdf                ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_add_sub0.bsf                ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_mult0.tdf                   ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_mult0.bsf                   ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_divide0.tdf                 ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_divide0.bsf                 ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux1.tdf                    ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_mux1.bsf                    ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_decode0.tdf                 ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_decode0.bsf                 ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_add_sub1.tdf                ; --             ; --          ; --             ;
-; MISC_FILE                          ; lpm_add_sub1.bsf                ; --             ; --          ; --             ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE        ; 1.2V                            ; --             ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                        ; --             ; final_main  ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --             ; final_main  ; Top            ;
-; TOP_LEVEL_ENTITY                   ; final_main                      ; final_pro_main ; --          ; --             ;
-; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --             ; --          ; eda_blast_fpga ;
-; VERILOG_INPUT_VERSION              ; SystemVerilog_2005              ; Verilog_2001   ; --          ; --             ;
-; VHDL_INPUT_VERSION                 ; VHDL_2008                       ; VHDL_1993      ; --          ; --             ;
-+------------------------------------+---------------------------------+----------------+-------------+----------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                              ;
++------------------------------------+---------------------------------+----------------+----------------------+----------------+
+; Assignment Name                    ; Value                           ; Default Value  ; Entity Name          ; Section Id     ;
++------------------------------------+---------------------------------+----------------+----------------------+----------------+
+; COMPILER_SIGNATURE_ID              ; 242544225679991.177193604807188 ; --             ; --                   ; --             ;
+; EDA_OUTPUT_DATA_FORMAT             ; Vhdl                            ; --             ; --                   ; eda_simulation ;
+; EDA_SIMULATION_TOOL                ; ModelSim-Altera (VHDL)          ; <None>         ; --                   ; --             ;
+; IP_TOOL_NAME                       ; LPM_COUNTER                     ; --             ; --                   ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                         ; --             ; --                   ; --             ;
+; IP_TOOL_NAME                       ; LPM_ADD_SUB                     ; --             ; --                   ; --             ;
+; IP_TOOL_NAME                       ; LPM_MULT                        ; --             ; --                   ; --             ;
+; IP_TOOL_NAME                       ; LPM_DIVIDE                      ; --             ; --                   ; --             ;
+; IP_TOOL_NAME                       ; LPM_MUX                         ; --             ; --                   ; --             ;
+; IP_TOOL_NAME                       ; LPM_DECODE                      ; --             ; --                   ; --             ;
+; IP_TOOL_NAME                       ; LPM_ADD_SUB                     ; --             ; --                   ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --                   ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --                   ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --                   ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --                   ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --                   ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --                   ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --                   ; --             ;
+; IP_TOOL_VERSION                    ; 9.1                             ; --             ; --                   ; --             ;
+; MAX_CORE_JUNCTION_TEMP             ; 85                              ; --             ; --                   ; --             ;
+; MIN_CORE_JUNCTION_TEMP             ; 0                               ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_counter0.tdf                ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_counter0.bsf                ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_mux0.tdf                    ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_mux0.bsf                    ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_add_sub0.tdf                ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_add_sub0.bsf                ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_mult0.tdf                   ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_mult0.bsf                   ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_divide0.tdf                 ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_divide0.bsf                 ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_mux1.tdf                    ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_mux1.bsf                    ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_decode0.tdf                 ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_decode0.bsf                 ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_add_sub1.tdf                ; --             ; --                   ; --             ;
+; MISC_FILE                          ; lpm_add_sub1.bsf                ; --             ; --                   ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE        ; 1.2V                            ; --             ; --                   ; --             ;
+; PARTITION_COLOR                    ; 16764057                        ; --             ; final_final_pro_main ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                          ; --             ; final_final_pro_main ; Top            ;
+; TOP_LEVEL_ENTITY                   ; final_final_pro_main            ; final_pro_main ; --                   ; --             ;
+; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                             ; --             ; --                   ; eda_blast_fpga ;
+; VERILOG_INPUT_VERSION              ; SystemVerilog_2005              ; Verilog_2001   ; --                   ; --             ;
+; VHDL_INPUT_VERSION                 ; VHDL_2008                       ; VHDL_1993      ; --                   ; --             ;
++------------------------------------+---------------------------------+----------------+----------------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -126,12 +126,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 276 MB              ; 00:00:11                           ;
-; Fitter                    ; 00:00:07     ; 1.0                     ; 317 MB              ; 00:00:08                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 283 MB              ; 00:00:03                           ;
+; Analysis & Synthesis      ; 00:00:07     ; 1.0                     ; 278 MB              ; 00:00:08                           ;
+; Fitter                    ; 00:00:05     ; 1.0                     ; 318 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 284 MB              ; 00:00:02                           ;
 ; Assembler                 ; 00:00:01     ; 1.0                     ; 252 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 219 MB              ; 00:00:04                           ;
-; Total                     ; 00:00:23     ; --                      ; --                  ; 00:00:26                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 221 MB              ; 00:00:03                           ;
+; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:18                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

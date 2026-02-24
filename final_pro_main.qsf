@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C16F484C6
-set_global_assignment -name TOP_LEVEL_ENTITY final_main
+set_global_assignment -name TOP_LEVEL_ENTITY final_final_pro_main
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:12:47  FEBRUARY 23, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
@@ -51,11 +51,7 @@ set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name QIP_FILE lpm_counter0.qip
-set_global_assignment -name BDF_FILE increment.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE test_inc_dec_1.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE test_inc_dec_1.vwf
-set_global_assignment -name VHDL_FILE "16-7seg.vhd"
 set_location_assignment PIN_G21 -to CLK
 set_location_assignment PIN_H2 -to cal
 set_location_assignment PIN_G3 -to dec
@@ -95,9 +91,54 @@ set_location_assignment PIN_F1 -to inc
 set_location_assignment PIN_H2 -to Sclr
 set_location_assignment PIN_J1 -to t1
 set_location_assignment PIN_J2 -to t2
+set_location_assignment PIN_J1 -to o1
+set_location_assignment PIN_J6 -to num_1/2
+set_location_assignment PIN_E4 -to sel[1]
+set_location_assignment PIN_D2 -to sel[0]
+set_location_assignment PIN_H2 -to sclr
+set_location_assignment PIN_H5 -to Res_cal
+set_location_assignment PIN_H6 -to Res_1/2
+set_location_assignment PIN_H2 -to P1
+set_location_assignment PIN_G3 -to CLR
+set_location_assignment PIN_F1 -to P2
+set_location_assignment PIN_J1 -to LED[0]
+set_location_assignment PIN_J2 -to LED[1]
+set_location_assignment PIN_J3 -to LED[2]
+set_location_assignment PIN_H1 -to LED[3]
+set_location_assignment PIN_F2 -to LED[4]
+set_location_assignment PIN_E1 -to LED[5]
+set_location_assignment PIN_C1 -to LED[6]
+set_location_assignment PIN_C2 -to LED[7]
+set_location_assignment PIN_B2 -to LED[8]
+set_location_assignment PIN_B1 -to LED[9]
+set_location_assignment PIN_F14 -to seg_num[6]
+set_location_assignment PIN_B17 -to seg_num[5]
+set_location_assignment PIN_A17 -to seg_num[4]
+set_location_assignment PIN_E15 -to seg_num[3]
+set_location_assignment PIN_B16 -to seg_num[2]
+set_location_assignment PIN_A16 -to seg_num[1]
+set_location_assignment PIN_D15 -to seg_num[0]
+set_location_assignment PIN_G15 -to seg_P[6]
+set_location_assignment PIN_D19 -to seg_P[5]
+set_location_assignment PIN_C19 -to seg_P[4]
+set_location_assignment PIN_B19 -to seg_P[3]
+set_location_assignment PIN_A19 -to seg_P[2]
+set_location_assignment PIN_F15 -to seg_P[1]
+set_location_assignment PIN_B18 -to seg_P[0]
+set_global_assignment -name AHDL_FILE lpm_add_sub0.tdf
+set_global_assignment -name AHDL_FILE lpm_add_sub1.tdf
+set_global_assignment -name AHDL_FILE lpm_counter0.tdf
+set_global_assignment -name AHDL_FILE lpm_decode0.tdf
+set_global_assignment -name AHDL_FILE lpm_divide0.tdf
+set_global_assignment -name AHDL_FILE lpm_mult0.tdf
+set_global_assignment -name AHDL_FILE lpm_mux0.tdf
+set_global_assignment -name AHDL_FILE lpm_mux1.tdf
+set_global_assignment -name QIP_FILE lpm_counter0.qip
+set_global_assignment -name BDF_FILE increment.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE test_inc_dec_1.vwf
+set_global_assignment -name VHDL_FILE "16-7seg.vhd"
 set_global_assignment -name VERILOG_FILE press_detector.v
 set_global_assignment -name VERILOG_FILE edge_detector.v
-set_location_assignment PIN_J1 -to o1
 set_global_assignment -name VERILOG_FILE but_con.v
 set_global_assignment -name QIP_FILE lpm_mux0.qip
 set_global_assignment -name QIP_FILE lpm_add_sub0.qip
@@ -106,18 +147,8 @@ set_global_assignment -name QIP_FILE lpm_divide0.qip
 set_global_assignment -name QIP_FILE lpm_mux1.qip
 set_global_assignment -name VERILOG_FILE ALU.v
 set_global_assignment -name BDF_FILE final_main.bdf
-set_location_assignment PIN_J6 -to num_1/2
-set_location_assignment PIN_E4 -to sel[1]
-set_location_assignment PIN_D2 -to sel[0]
-set_location_assignment PIN_H2 -to sclr
-set_location_assignment PIN_H5 -to Res_cal
-set_location_assignment PIN_H6 -to Res_1/2
 set_global_assignment -name VHDL_FILE 32bit_7seg.vhd
 set_global_assignment -name VHDL_FILE "16-32.vhd"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name QIP_FILE lpm_decode0.qip
 set_global_assignment -name VERILOG_FILE demux.v
 set_global_assignment -name VERILOG_FILE "demux 1-2.v"
@@ -126,4 +157,67 @@ set_global_assignment -name VERILOG_FILE tag_of_war.v
 set_global_assignment -name SOURCE_FILE "ALU-2.0"
 set_global_assignment -name VERILOG_FILE ALU_2.v
 set_global_assignment -name QIP_FILE lpm_add_sub1.qip
+set_global_assignment -name BDF_FILE push_ball.bdf
+set_global_assignment -name BDF_FILE push_ball_test.bdf
+set_global_assignment -name VERILOG_FILE label_player.v
+set_global_assignment -name VERILOG_FILE Led_fun_time.v
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_global_assignment -name BDF_FILE final_final_pro_main.bdf
+set_global_assignment -name VERILOG_FILE demux_modular.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_location_assignment PIN_H2 -to B[0]
+set_location_assignment PIN_G3 -to B[1]
+set_location_assignment PIN_F1 -to B[2]
+set_location_assignment PIN_J6 -to S[0]
+set_location_assignment PIN_H5 -to S[1]
+set_location_assignment PIN_H6 -to S[2]
+set_location_assignment PIN_G4 -to S[3]
+set_location_assignment PIN_G5 -to S[4]
+set_location_assignment PIN_J7 -to S[5]
+set_location_assignment PIN_H7 -to S[6]
+set_location_assignment PIN_E3 -to S[7]
+set_location_assignment PIN_E4 -to S[8]
+set_location_assignment PIN_D2 -to S[9]
+set_location_assignment PIN_J1 -to L_out[0]
+set_location_assignment PIN_J2 -to L_out[1]
+set_location_assignment PIN_J3 -to L_out[2]
+set_location_assignment PIN_H1 -to L_out[3]
+set_location_assignment PIN_F2 -to L_out[4]
+set_location_assignment PIN_E1 -to L_out[5]
+set_location_assignment PIN_C1 -to L_out[6]
+set_location_assignment PIN_C2 -to L_out[7]
+set_location_assignment PIN_B2 -to L_out[8]
+set_location_assignment PIN_B1 -to L_out[9]
+set_location_assignment PIN_F13 -to SEG_1[6]
+set_location_assignment PIN_F12 -to SEG_1[5]
+set_location_assignment PIN_G12 -to SEG_1[4]
+set_location_assignment PIN_H13 -to SEG_1[3]
+set_location_assignment PIN_H12 -to SEG_1[2]
+set_location_assignment PIN_F11 -to SEG_1[1]
+set_location_assignment PIN_E11 -to SEG_1[0]
+set_location_assignment PIN_A15 -to SEG_2[6]
+set_location_assignment PIN_E14 -to SEG_2[5]
+set_location_assignment PIN_B14 -to SEG_2[4]
+set_location_assignment PIN_A14 -to SEG_2[3]
+set_location_assignment PIN_C13 -to SEG_2[2]
+set_location_assignment PIN_B13 -to SEG_2[1]
+set_location_assignment PIN_A13 -to SEG_2[0]
+set_location_assignment PIN_F14 -to SEG_3[6]
+set_location_assignment PIN_B17 -to SEG_3[5]
+set_location_assignment PIN_A17 -to SEG_3[4]
+set_location_assignment PIN_E15 -to SEG_3[3]
+set_location_assignment PIN_B16 -to SEG_3[2]
+set_location_assignment PIN_A16 -to SEG_3[1]
+set_location_assignment PIN_D15 -to SEG_3[0]
+set_location_assignment PIN_G15 -to SEG_4[6]
+set_location_assignment PIN_D19 -to SEG_4[5]
+set_location_assignment PIN_C19 -to SEG_4[4]
+set_location_assignment PIN_B19 -to SEG_4[3]
+set_location_assignment PIN_A19 -to SEG_4[2]
+set_location_assignment PIN_F15 -to SEG_4[1]
+set_location_assignment PIN_B18 -to SEG_4[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

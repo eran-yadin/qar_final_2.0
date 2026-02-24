@@ -1,2 +1,2 @@
 v1
-DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,alu_32bit_2:inst|lpm_mult:Mult0|mult_ubt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,final_main:inst|alu_32bit_2:inst|lpm_mult:Mult0|mult_ubt:auto_generated|mac_out2,
